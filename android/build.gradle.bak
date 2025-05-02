@@ -2,7 +2,7 @@ group 'ar.fgsoruco.opencv_4'
 version '1.0-SNAPSHOT'
 
 buildscript {
-    ext.kotlin_version = '1.8.0' 
+    ext.kotlin_version = '1.3.50'
     repositories {
         google()
         jcenter()
@@ -10,7 +10,7 @@ buildscript {
 
     dependencies {
         classpath 'com.android.tools.build:gradle:4.1.0'
-        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.8.0"
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
     }
 }
 
@@ -25,7 +25,6 @@ apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
 
 android {
-	namespace 'com.codevolt.opencv4' // change to a unique namespace
     compileSdkVersion 30
 
     sourceSets {
